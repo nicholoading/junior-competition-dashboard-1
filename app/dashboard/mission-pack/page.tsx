@@ -117,7 +117,7 @@ const Page = () => {
         ) : (
           <div className="flex items-center justify-center h-[600px]">
             <p>
-              No mission pack available for the current stage in Senior-HTML
+              No mission pack available for the current stage in Junior-HTML
               category.
             </p>
           </div>
