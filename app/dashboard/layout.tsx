@@ -23,6 +23,7 @@ import {
   Clock,
 } from "lucide-react";
 import { supabase } from "@/lib/supabase";
+import { AdSlideshow } from "@/components/ad";
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -121,6 +122,9 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
         <Sidebar onSignOut={handleSignOut} />
       </aside>
       <main className="flex-1 overflow-y-auto">
+      <div className="mb-6">
+          <AdSlideshow />
+        </div>
         <div className="container mx-auto py-6 px-4 lg:px-8 pt-16 lg:pt-6">
           {isAllowed === null ? (
             <div className="flex h-full items-center justify-center">
